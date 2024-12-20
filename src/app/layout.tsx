@@ -19,6 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" href="/logo.png" type="image/x-icon"></link>
       <body
         className={`${inter.className} antialiased flex flex-col items-center justify-center text-text-primary`}
       >
