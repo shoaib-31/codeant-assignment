@@ -32,10 +32,6 @@ const SAASLoginOptions = [
 const LoginSection = ({ activeTab }: { activeTab: TabType }) => {
   const direction = activeTab === "SAAS" ? -1 : 1;
   const animationVariants = {
-    initial: (direction: number) => ({
-      opacity: 0,
-      x: direction > 0 ? 100 : -100,
-    }),
     animate: {
       opacity: 1,
       x: 0,

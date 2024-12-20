@@ -3,6 +3,7 @@ import Button from "@/components/Button";
 import RepoList from "@/components/RepoList";
 import { Plus, RefreshCw, Search } from "lucide-react";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Page = () => {
   const [searchInput, setSearchInput] = React.useState("");
@@ -10,7 +11,12 @@ const Page = () => {
     setSearchInput(e.target.value);
   };
   return (
-    <div className="w-full h-full md:p-6 md:overflow-hidden md:border-l">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.2 }}
+      className="w-full h-full md:p-6 md:overflow-hidden md:border-l"
+    >
       <div className=" w-full h-full flex flex-col md:rounded-xl md:border md:overflow-hidden ">
         <div className="w-full flex flex-col gap-4 p-4 border-b md:px-6 md:py-5 h-auto">
           <div className=" w-full h-full flex flex-col gap-4 md:flex-row md:justify-between">
@@ -45,7 +51,7 @@ const Page = () => {
         </div>
         <RepoList searchInput={searchInput} />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
