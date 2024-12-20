@@ -1,10 +1,10 @@
 import { TabType } from "@/constants/tabs";
 import React from "react";
-import Github from "@/assets/github.svg";
-import Bitbucket from "@/assets/bitbucket.svg";
-import Azure from "@/assets/azure.svg";
-import Gitlab from "@/assets/gitlab.svg";
-import Key from "@/assets/key.svg";
+import Github from "@/assets/github.svg?url";
+import Bitbucket from "@/assets/bitbucket.svg?url";
+import Azure from "@/assets/azure.svg?url";
+import Gitlab from "@/assets/gitlab.svg?url";
+import Key from "@/assets/key.svg?url";
 import LoginButton from "@/components/LoginButton";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
@@ -54,7 +54,7 @@ const LoginSection = ({ activeTab }: { activeTab: TabType }) => {
   };
   const router = useRouter();
   const handleLogin = async () => {
-    await router.push("/dashboard");
+    await router.push("/repositories");
   };
 
   return (

@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Logo from "@/assets/logo.svg";
+import Logo from "@/assets/logo.svg?url";
 import { useState } from "react";
 import { tabs, TabType } from "@/constants/tabs";
 import LoginSection from "@/components/LoginSection";

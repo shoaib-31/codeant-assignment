@@ -1,7 +1,7 @@
 import { ArrowUp } from "lucide-react";
 import Image from "next/image";
-import PieChart from "@/assets/pie-chart.svg";
-import Logo from "@/assets/logo.svg";
+import PieChart from "@/assets/pie-chart.svg?url";
+import Logo from "@/assets/logo.svg?url";
 import React from "react";
 import CountUp from "react-countup";
 

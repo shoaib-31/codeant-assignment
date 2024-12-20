@@ -12,6 +12,8 @@ export default {
         background: "var(--background)",
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",
+        "text-primary": "var(--text-primary)",
+        "text-secondary": "var(--text-secondary)",
       },
       boxShadow: {
         "all-sides":
