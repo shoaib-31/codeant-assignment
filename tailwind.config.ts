@@ -10,7 +10,15 @@ export default {
     extend: {
       colors: {
         background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "var(--color-primary)",
+        secondary: "var(--color-secondary)",
+      },
+      boxShadow: {
+        "all-sides":
+          "0 4px 10px rgba(0, 0, 0, 0.05), 0 -4px 10px rgba(0, 0, 0, 0.05), 4px 0 10px rgba(0, 0, 0, 0.05), -4px 0 10px rgba(0, 0, 0, 0.05)",
+      },
+      borderColor: {
+        DEFAULT: "#E9EAEB",
       },
     },
   },
